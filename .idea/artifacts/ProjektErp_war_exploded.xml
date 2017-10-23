@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ProjektErp:war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/ProjektErp_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.40" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="ProjektErp/web/Web" />
+      <element id="javaee-facet-resources" facet="ProjektErp/web/Web2" />
+    </root>
+  </artifact>
+</component>
