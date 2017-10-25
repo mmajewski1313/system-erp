@@ -21,6 +21,13 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Web Config" removed="false">
+          <file>file://$MODULE_DIR$/web/WEB-INF/spring-web-config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -32,5 +39,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.40" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:jquery:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:bootstrap:3.2.0" level="project" />
+    <orderEntry type="library" name="Spring-4.3.12.RELEASE" level="project" />
   </component>
 </module>

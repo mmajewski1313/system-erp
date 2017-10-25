@@ -5,10 +5,20 @@
 
 <html>
   <head>
-    <title>$Title$</title>
+    <link href="webjars/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="<c:url value="../webapp/resources/theme1/css/main.css" />" rel="stylesheet">
+    <script src="<c:url value="../resources/theme1/js/jquery.1.10.2.min.js" />"></script>
+    <script src="<c:url value="../resources/theme1/js/main.js" />"></script>
+    <title>Stronka</title>
   </head>
   <body>
   Tabelka pracowników
+  ...
+  <h1>1. Test CSS</h1>
+
+  <h2>2. Test JS</h2>
+  <div id="msg"></div>
+
   <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
                      url = "jdbc:mysql://localhost:3306/system_erp"
                      user = "root"  password = ""/>
@@ -16,6 +26,14 @@
   <sql:query dataSource = "${snapshot}" var = "result">
     SELECT * from Employees;
   </sql:query>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Spring 3 MVC Project</a>
+      </div>
+    </div>
+  </nav>
 
   <table border = "1" width = "100%">
     <tr>
@@ -37,4 +55,6 @@
 
 
   </body>
+  <script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </html>
